@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>MOOP</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="res\logo_moop.png">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="C:\Users\HP\Desktop\bootstrap\css\bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="C:\Users\HP\Desktop\bootstrap\css\mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="style\style.css">
+
+</head>
+<body class="w3-light-grey">
+
+
+          <!--Navbar-->
+          <nav style="background-color: black !important;" class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+            <div class="container">
+              
+              
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse font-weight-bold h5-responsive" id="navbarSupportedContent-7">
+                <ul class="navbar-nav mr-auto smooth-scroll">
+                  <li class="nav-item ">
+                    <a href="index.html" class="nav-link w3-button "><i class="fa fa-home w3-xlarge"></i> Accueil</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="index.html#apropos" class="nav-link w3-button"><i class="fas fa-quote-left"></i> À propos</a><!--dropdown-->
+                  </li>
+                 
+    <!-- Dropdown -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false"><i class="fas fa-book-reader w3-xlarge"></i> Modes opératoires</a>
+        <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item black-text" href="index.html#moyens">Les moyens de paiement</a>
+          <a class="dropdown-item black-text" href="index.html#crédits">Les crédits</a>
+          <a class="dropdown-item black-text" href="index.html#tiers">Opérations sur tiers</a>
+          <a class="dropdown-item black-text" href="index.html#étranger">Service bancaire étranger</a>
+        </div>
+      </li>
+
+                  <li class="nav-item">
+                    <a href="contact.html" class="nav-link w3-button"><i class="far fa-envelope w3-xlarge"></i> Contact</a>
+                  </li>
+                </ul>
+
+                <!-- Social Icon  -->
+                    <ul class="navbar-nav nav-flex-icons">
+                      <li>
+                        <a href="index.html" class="nav-link w3-button"><img style="height: 26px;width:140px;" src="res\logo_stb.png"></a>
+                      </li>
+                      
+                    </ul>
+                
+              </div>
+            </div>
+          </nav>
+          <!-- Navbar -->
+
+
+
+
+    <!--Content-->
+    <div style="margin: 10%" class="card z-depth-5 wow fadeInUp">
+
+      <!--Header-->
+      <div class="card-header deep-blue-gradient text-center ">
+        <h4 class="title font-weight-bold text-grey">
+          <i class="fa fa-pencil-alt "></i> Contacter nous</h4>
+    </div>
+      <!--Body-->
+      <div class="card-body wow fadeInUp">
+
+        <!-- Material input name -->
+        <div class="md-form form-sm">
+          
+          <input type="text" id="name" class="form-control form-control-sm">
+          <label for="materialFormNameModalEx1"><i class="fas fa-user"> </i> Nom et prénom</label>
+        </div>
+
+
+        <div class="md-form form-sm">
+          
+          <input type="text" id="poste" class="form-control form-control-sm">
+          <label for="materialFormNameModalEx1"><i class="fas fa-user-tie"></i> Votre poste</label>
+        </div>
+
+
+        <!-- Material input email -->
+        <div class="md-form form-sm">
+          
+          <input type="text" id="email" class="form-control form-control-sm">
+          <label for="materialFormEmailModalEx1"><i class="far fa-envelope"> </i> Adresse mail</label>
+        </div>
+
+        <!-- Material input subject -->
+        <div class="md-form form-sm">
+          
+          <input type="text" id="object" class="form-control form-control-sm">
+          <label for="materialFormSubjectModalEx1"><i class="fas fa-tags"></i> Object</label>
+        </div>
+
+        <!-- Material textarea message -->
+        <div class="md-form form-sm">
+          
+          <textarea  type="text" id="message"
+            class="md-textarea form-control"></textarea>
+          <label for="materialFormMessageModalEx1"><i class="far fa-file-alt"></i> Votre message</label>
+        </div>
+
+        <div class="text-center mt-4 mb-2 ">
+          <button class="btn deep-blue-gradient font-weight-bold text-grey" onclick="validateForm();"><i class="far fa-paper-plane"> </i> Envoyer 
+            
+          </button>
+        </div>
+
+         <div class="status"></div>
+
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Google map-->
+<div ><iframe style="width: 100% !important; height: 250px;" src="https://maps.google.com/maps?hl=en&amp;q=STB bank hedi nouira+()&amp;ie=UTF8&amp;t=&amp;z=16&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><div style="position: absolute;width: 80%;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;text-align: center;"><small style="line-height: 1.8;font-size: 0px;background: #fff;"> <a href="https://googlemapsembed.net/">Embed Google Map</a> </small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div>
+
+<!--Google Maps-->
+
+
+<!-- Footer -->
+<footer class="page-footer font-small  ">
+
+  <!-- Copyright -->
+  <img style="height: 40px;width:150px; " src="res\logo_moop.png" class="text-left"><span class="footer-copyright text-center" style="margin-left: 27%; margin-right: 27%"> Copyright © Société Tunisienne de Banque 2020
+  </span><img style="height: 40px;width:150px; " src="res\logo_stb.png" class="text-right">
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+  <!-- End your project here-->
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="C:\Users\HP\Desktop\bootstrap\js\jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="C:\Users\HP\Desktop\bootstrap\js\popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="C:\Users\HP\Desktop\bootstrap\js\bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="C:\Users\HP\Desktop\bootstrap\js\mdb.min.js"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript" src="js\main.js"></script>
+
+</body>
+</html>

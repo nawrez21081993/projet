@@ -1,0 +1,73 @@
+/*-----------------------header----------------------------------*/
+html,
+body,
+header,
+.view {
+  height: 100%;
+}
+
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 100vh;
+  }
+}
+
+.navbar {
+    background-color: transparent;
+}
+
+.top-nav-collapse {
+    background-color: black;
+}
+
+.dropdown-item:hover{
+	background-color: black;
+	color: white !important;
+}
+
+.page-footer{
+	background-color: black;
+}
+
+.nav-item:hover{
+background-color: grey !important;
+
+}
+
+.text-uppercase{
+	 text-shadow: 4px 4px 4px grey;
+}
+
+.hr-light {
+  border-top: 3px solid #fff;
+  width: 80px;
+}
+
+a{
+	color: white !important;
+}
+
+/*--------------------zoom effect---------------*/
+
+.inner{
+	overflow: hidden;
+	height: 190px !important;
+}
+
+.inner:hover{
+	cursor: pointer;
+	
+}
+
+.inner img{
+	transition: all 1.5s ease;
+}
+
+.inner:hover img{
+	transform: scale(1.5);
+}
+
+
